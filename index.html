@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TITLE</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      html,
+      body {
+        height: 100%;
+        padding: 0;
+        margin: 0;
+        font-family: "Lato", sans-serif;
+        overflow: hidden;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      #particles-js {
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        z-index: 10;
+      }
+      .container {
+        position: absolute;
+        z-index: 20;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- particles.js container -->
+    <div id="particles-js"></div>
+    <div class="container">
+      <div class="content">
+        <center>
+          <h1>TITLE</h1>
+          <h2>SUBTITLE</h2>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <small>crafted by provider.pt | web artisans</small>
+        </center>
+      </div>
+    </div>
+    <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <!-- stats.js lib -->
+    <script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
+    <script>
+      particlesJS("particles-js", {
+        particles: {
+          number: {
+            value: 120,
+            density: { enable: true, value_area: 721.5354273894853 },
+          },
+          color: { value: "#414141" },
+          shape: {
+            type: "circle",
+            stroke: { width: 0, color: "#000000" },
+            polygon: { nb_sides: 5 },
+          },
+          opacity: {
+            value: 0.0561194221302933,
+            random: false,
+            anim: { enable: true, speed: 1, opacity_min: 0.1, sync: false },
+          },
+          size: {
+            value: 3,
+            random: true,
+            anim: { enable: false, speed: 40, size_min: 0.1, sync: false },
+          },
+          line_linked: {
+            enable: true,
+            distance: 150,
+            color: "#a2a2a2",
+            opacity: 0.4,
+            width: 1,
+          },
+          move: {
+            enable: true,
+            speed: 6,
+            direction: "none",
+            random: false,
+            straight: false,
+            out_mode: "out",
+            bounce: false,
+            attract: { enable: false, rotateX: 600, rotateY: 1200 },
+          },
+        },
+        retina_detect: true,
+      });
+    </script>
+  </body>
+</html>
